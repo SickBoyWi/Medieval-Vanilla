@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- MAKE SURE CODE IS REMOVING THIS SITE, THEN DELETE THIS FILE.
+  <SitePartDef>
+    <defName>SleepingMechanoids</defName>
+    <label>sleeping mechanoids</label>
+    <description>A group of sleeping mechanoids.</description>
+    <workerClass>SitePartWorker_SleepingMechanoids</workerClass>
+    <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+    <expandingIconTexture>World/WorldObjects/Expanding/Sites/SleepingPawns</expandingIconTexture>
+    <arrivedLetter>There are a few sleeping hostile mechanoids in this area.\n\nThe mechanoids may or may not wake up when you approach them, so beware.</arrivedLetter>
+    <arrivedLetterDef>NegativeEvent</arrivedLetterDef>
+    <wantsThreatPoints>true</wantsThreatPoints>
+    <tags>
+      <li>MineralScannerPreciousLumpThreat</li>
+    </tags>
+  </SitePartDef>
+-->
+</Defs>

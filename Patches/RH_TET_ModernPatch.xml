@@ -1,0 +1,72 @@
+<Patch>
+	<Operation Class="MedievalVanilla.PatchOperationRemovePostMedievalStuff">
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/StorytellerDef[@Name="BaseStoryteller"]/comps/li[1]/fireAfterDaysPassed</xpath>
+		<value>
+			<fireAfterDaysPassed>999999</fireAfterDaysPassed>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/ThingDef[defName = "ComponentIndustrial"]/description</xpath>
+		<value>
+			<description>Miscellaneous gears, wheels, fasteners, and the like. Necessary for assembling complex machines and equipment.</description>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/RecipeDef[defName = "Make_ComponentIndustrial"]/skillRequirements/Crafting</xpath>
+		<value>
+			<Crafting>6</Crafting>
+		</value>
+	</Operation>	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/ThingDef[defName = "FueledSmithy"]</xpath>
+		<value>
+			<recipes>
+			  <li>Make_ComponentIndustrial</li>
+			</recipes>
+		</value>
+	</Operation>
+
+	<!--
+	<Operation Class="PatchOperationAdd">
+		<xpath>/Defs/RecipeDef[defName = "Make_ComponentIndustrial"]</xpath>
+		<value>
+			<researchPrerequisite>RH_TET_ComponentConstruction</researchPrerequisite>
+		</value>
+	</Operation>
+	-->
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/QuestScriptDef[defName = "Util_JoinerWalkIn"]/root/nodes/li[1]/kindDef</xpath>
+		<value>
+			<kindDef>Tribesperson</kindDef>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/QuestScriptDef[defName = "Util_JoinerDropIn"]/root/nodes/li[1]/kindDef</xpath>
+		<value>
+			<kindDef>Tribesperson</kindDef>
+		</value>
+	</Operation>	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/IncidentDef[defName = "WandererJoin"]/pawnKind</xpath>
+		<value>
+			<pawnKind>Tribesperson</pawnKind>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>/Defs/PawnKindDef[defName = "Slave"]/defaultFactionType</xpath>
+		<value>
+			<defaultFactionType>TribeRough</defaultFactionType>
+		</value>
+	</Operation>
+	
+</Patch>

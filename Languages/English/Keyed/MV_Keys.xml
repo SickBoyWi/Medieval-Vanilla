@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<MV_Include_Uranium>Include uranium in the game?</MV_Include_Uranium>
+	<MV_Include_Plasteel>Include plasteel in the game?</MV_Include_Plasteel>
+	<MV_Include_UraniumMessage>(Note: Changing these settings will require a game restart in order for it to take effect.</MV_Include_UraniumMessage>
+  
+</LanguageData>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Medieval - Vanilla</name>
+	<author>SickBoyWI</author>
+	<supportedVersions><li>1.4</li></supportedVersions>
+	<packageId>SickBoyWi.Medieval.Vanilla</packageId>
+	<description>
+This mod removes everything from the game after the Medieval Era. Everything else stays vanilla. 
+
+How long can you survive what the storyteller is throwing at you?! There really isn't an end game here, since you can't make a spaceship and fly away. 
+
+Notes: 
+	*This will conflict with any other mods that reference vanilla items that are post-medieval. The game will still work, but you'll see errors in the log if you look. You may also see errors related to mods referencing post-medieval stuff.
+	*This may not work with scenarios that have post-medieval items as a part of the starting items list. You'll see log errors, and the futuristic items won't spawn.
+	*NOT COMPATIBLE WITH BIOTECH OR ROYALTY. Those DLCs rely on future tech, and this mod removes that stuff from the game.
+
+I made this at the request of several players who were interested, while the other more popular medieval solutions are updated for the latest game version.
+	
+Discuss this at Ludeon: https://ludeon.com/forums/index.php?topic=47626.0
+
+Please consider supporting me on Patreon: https://www.patreon.com/SickBoyWI
+
+	</description>
+</ModMetaData>
