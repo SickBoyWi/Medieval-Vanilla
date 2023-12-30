@@ -5,9 +5,9 @@
 		<defName>ToxicFallout</defName>
 		<label>toxic fallout</label>
 		<category>Misc</category>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
 		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
 		<gameCondition>ToxicFallout</gameCondition>
 		<letterLabel>Toxic fallout</letterLabel>
@@ -21,9 +21,9 @@
 			<min>2.5</min>
 			<max>10.5</max>
 		</durationDays>
-    <tale>ToxicFallout</tale>
+		<tale>ToxicFallout</tale>
 	</IncidentDef>
-<!--
+	<!--
   <IncidentDef>
     <defName>SolarFlare</defName>
     <label>solar flare</label>

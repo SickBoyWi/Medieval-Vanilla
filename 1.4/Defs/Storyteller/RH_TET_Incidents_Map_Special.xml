@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!--=============== ShipChunkDrop =============-->
-  <IncidentDef>
-    <defName>ShipChunkDrop</defName>
-    <label>ship chunk drop</label>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
-    <workerClass>MedievalVanilla.IncidentWorker_RH_TET_ShipChunkDrop</workerClass>
-    <category>ShipChunkDrop</category>
+	<!--=============== ShipChunkDrop =============-->
+	<IncidentDef>
+		<defName>ShipChunkDrop</defName>
+		<label>ship chunk drop</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>MedievalVanilla.IncidentWorker_RH_TET_ShipChunkDrop</workerClass>
+		<category>ShipChunkDrop</category>
 		<baseChance>0</baseChance>
-  </IncidentDef>
+	</IncidentDef>
 
-  <IncidentDef>
-    <defName>ResourcePodCrash</defName>
-    <label>resource pod crash</label>
-    <category>Misc</category>
-    <targetTags>
-      <li>Map_PlayerHome</li>
-    </targetTags>
-    <workerClass>IncidentWorker_ResourcePodCrash</workerClass>
-    <baseChance>0</baseChance>
-  </IncidentDef>
+	<IncidentDef>
+		<defName>ResourcePodCrash</defName>
+		<label>resource pod crash</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_ResourcePodCrash</workerClass>
+		<baseChance>0</baseChance>
+	</IncidentDef>
   
-  <!--
+	<!--
   <IncidentDef>
 		<defName>StrangerInBlackJoin</defName>
 		<label>man in black</label>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-<!-- MAKE SURE CODE IS REMOVING THIS SITE, THEN DELETE THIS FILE.
+	<!-- MAKE SURE CODE IS REMOVING THIS SITE, THEN DELETE THIS FILE.
   <SitePartDef>
     <defName>SleepingMechanoids</defName>
     <label>sleeping mechanoids</label>
