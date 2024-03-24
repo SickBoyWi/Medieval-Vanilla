@@ -2,7 +2,7 @@
 <ModMetaData>
 	<name>Medieval - Vanilla</name>
 	<author>SickBoyWI</author>
-	<supportedVersions><li>1.4</li></supportedVersions>
+	<supportedVersions><li>1.4</li><li>1.5</li></supportedVersions>
 	<packageId>SickBoyWi.Medieval.Vanilla</packageId>
 	<description>
 This mod removes everything from the game after the Medieval Era. Everything else stays vanilla. 
@@ -21,4 +21,15 @@ Discuss this at Ludeon: https://ludeon.com/forums/index.php?topic=47626.0
 Please consider supporting me on Patreon: https://www.patreon.com/SickBoyWI
 
 	</description>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+	</loadAfter>	
 </ModMetaData>

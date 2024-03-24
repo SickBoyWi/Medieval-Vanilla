@@ -291,9 +291,10 @@ namespace MedievalVanilla
             
             // This obviates the need for MV_RemoveSleepingMechanoids.xml.
             DebugString.AppendLine("SitePartDef Removing Stuff");
+            SitePartDef sleepingMechs = DefDatabase<SitePartDef>.GetNamed("SleepingMechanoids");
             RemoveStuffFromDatabase(typeof(DefDatabase<SitePartDef>), new[]
             {
-                SitePartDefOf.SleepingMechanoids,
+                sleepingMechs,
             });
 
             DebugString.AppendLine("RaidStrategyDef Removing Stuff");

@@ -6,3 +6,4 @@ D:\BackUp\Modding\RimWorld\Repositories\Medieval-Vanilla\1.4\Assemblies\Medieval
 D:\BackUp\Modding\RimWorld\Repositories\Medieval-Vanilla\Source\MedievalVanilla\obj\Debug\MedievalVanilla.csprojAssemblyReference.cache
 D:\BackUp\Modding\RimWorld\Repositories\Medieval-Vanilla\Source\MedievalVanilla\obj\Debug\MedievalVanilla.csproj.CoreCompileInputs.cache
 D:\BackUp\Modding\RimWorld\Repositories\Medieval-Vanilla\Source\MedievalVanilla\obj\Debug\MedievalVanilla.dll
+D:\BackUp\Modding\RimWorld\Repositories\Medieval-Vanilla\1.5\Assemblies\MedievalVanilla.dll
