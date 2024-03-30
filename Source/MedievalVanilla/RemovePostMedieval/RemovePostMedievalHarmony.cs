@@ -78,7 +78,29 @@ namespace MedievalVanilla
                 prefix: new HarmonyMethod(typeof(RemovePostMedievalHarmony), nameof(PawnUtility_IsTravelingInPod_Prefix)),
                 postfix: null);
 
+            //harmony.Patch(original: AccessTools.Method(
+            //    type: typeof(CacheData),
+            //    name: "GetApparelFromApparelProps",
+            //    parameters: null),
+            //    prefix: new HarmonyMethod(typeof(RemovePostMedievalHarmony), nameof(AlienRaceCacheDataGetApparelFromApparelPropsfix)),
+            //    postfix: null);
+
         }
+
+        //[HarmonyPriority(2000)]
+        //public static bool AlienRaceCacheDataGetApparelFromApparelPropsfix(ApparelProperties __instance, Pawn pawn, ref bool __result)
+        //{
+
+        //    if (!ModsConfig.IsActive("SickBoyWi.TheEndTimes.Skaven"))
+        //    { 
+        //        if (!apparelPropsToApparelDict.ContainsKey(props))
+        //            apparelPropsToApparelDict.Add(props, DefDatabase<ThingDef>.AllDefsListForReading.First(td => td.apparel == props));
+
+        //        return apparelPropsToApparelDict[props];
+        //    }
+
+        //    return true;
+        //}
 
         [HarmonyPriority(2000)]
         public static bool PawnUtility_IsTravelingInPod_Prefix(Pawn pawn, ref bool __result)
@@ -169,34 +191,34 @@ namespace MedievalVanilla
                     select x).RandomElement<ThingDef>();
         }
 
-        //TickManager
-        public static void StartingYear_PostFix(ref int __result)
-        {
-            __result = START_DATE; // The year that the end times started.
-        }
+        ////TickManager
+        //public static void StartingYear_PostFix(ref int __result)
+        //{
+        //    __result = START_DATE; // The year that the end times started.
+        //}
 
-        //GenDate
-        public static void Year_PostFix(long absTicks, float longitude, ref int __result)
-        {
-            long num = absTicks + ((long)GenDate.TimeZoneAt(longitude) * 2500L);
-            __result = START_DATE + Mathf.FloorToInt((float)num / 3600000f);
-        }
+        ////GenDate
+        //public static void Year_PostFix(long absTicks, float longitude, ref int __result)
+        //{
+        //    long num = absTicks + ((long)GenDate.TimeZoneAt(longitude) * 2500L);
+        //    __result = START_DATE + Mathf.FloorToInt((float)num / 3600000f);
+        //}
 
-        //GenDate
-        public static void DateFullStringAt_PostFix(long absTicks, Vector2 location, ref string __result)
-        {
-            int num = GenDate.DayOfSeason(absTicks, location.x) + 1;
-            string value = Find.ActiveLanguageWorker.OrdinalNumber(num, Gender.None);
-            __result = "TET_FullDate".Translate(value, GenDate.Quadrum(absTicks, location.x).Label(), GenDate.Year(absTicks, location.x), num);
-        }
+        ////GenDate
+        //public static void DateFullStringAt_PostFix(long absTicks, Vector2 location, ref string __result)
+        //{
+        //    int num = GenDate.DayOfSeason(absTicks, location.x) + 1;
+        //    string value = Find.ActiveLanguageWorker.OrdinalNumber(num, Gender.None);
+        //    __result = "TET_FullDate".Translate(value, GenDate.Quadrum(absTicks, location.x).Label(), GenDate.Year(absTicks, location.x), num);
+        //}
 
-        //GenDate
-        public static void DateReadoutStringAt_PostFix(long absTicks, Vector2 location, ref string __result)
-        {
-            int num = GenDate.DayOfSeason(absTicks, location.x) + 1;
-            string value = Find.ActiveLanguageWorker.OrdinalNumber(num, Gender.None);
-            __result = "TET_DateReadout".Translate(value, GenDate.Quadrum(absTicks, location.x).Label(), GenDate.Year(absTicks, location.x), num);
-        }
+        ////GenDate
+        //public static void DateReadoutStringAt_PostFix(long absTicks, Vector2 location, ref string __result)
+        //{
+        //    int num = GenDate.DayOfSeason(absTicks, location.x) + 1;
+        //    string value = Find.ActiveLanguageWorker.OrdinalNumber(num, Gender.None);
+        //    __result = "TET_DateReadout".Translate(value, GenDate.Quadrum(absTicks, location.x).Label(), GenDate.Year(absTicks, location.x), num);
+        //}
 
         public static IEnumerable<MethodInfo> AgeInjuryUtilityNamesHandler()
         {
