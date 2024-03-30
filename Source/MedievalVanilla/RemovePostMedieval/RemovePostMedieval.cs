@@ -24,7 +24,7 @@ namespace MedievalVanilla
 
         static RemovePostMedieval()
         {
-            DebugString.AppendLine("[Rimhammer - The End Times] - Initializing.");
+            DebugString.AppendLine("[Medieval Vanilla] - Initializing.");
             DebugString.AppendLine("Tech Limiter Active: Max Level = " + MedievalVanillaMod.MAX_TECHLEVEL.ToString());
             GiveApproppriateTechLevels();
 
@@ -372,7 +372,9 @@ namespace MedievalVanilla
             IncidentDef shipChunkDrop = IncidentDefOf.ShipChunkDrop;
             shipChunkDrop.baseChance = 0.0f;
 
-            DebugString.AppendLine("[Rimhammer - The End Times] - Init complete.");
+            PawnApparelGenerator.Reset();
+
+            DebugString.AppendLine("[Medieval Vanilla] - Init complete.");
 
             //Log.Message(DebugString.ToString());
         }
