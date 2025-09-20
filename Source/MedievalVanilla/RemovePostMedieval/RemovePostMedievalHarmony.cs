@@ -107,7 +107,7 @@ namespace MedievalVanilla
         {
             if (!pawn.IsColonist && (pawn.Faction == null || !pawn.Faction.IsPlayer))
                 return true;
-            __result = pawn.IsWorldPawn() && ThingOwnerUtility.AnyParentIs<ActiveDropPodInfo>((Thing)pawn);
+            __result = pawn.IsWorldPawn() && ThingOwnerUtility.AnyParentIs<ActiveTransporterInfo>((Thing)pawn);
             return false;
         }
 

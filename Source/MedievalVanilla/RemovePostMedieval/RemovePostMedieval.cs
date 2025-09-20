@@ -330,8 +330,8 @@ namespace MedievalVanilla
             RemoveStuffFromDatabase(typeof(DefDatabase<PawnKindDef>),
                 DefDatabase<PawnKindDef>.AllDefs
                     .Where(pkd =>
-                        (!pkd.defaultFactionType?.isPlayer ?? false) &&
-                        (pkd.race.techLevel > MedievalVanillaMod.MAX_TECHLEVEL || pkd.defaultFactionType?.techLevel > MedievalVanillaMod.MAX_TECHLEVEL))
+                        (!pkd.defaultFactionDef?.isPlayer ?? false) &&
+                        (pkd.race.techLevel > MedievalVanillaMod.MAX_TECHLEVEL || pkd.defaultFactionDef?.techLevel > MedievalVanillaMod.MAX_TECHLEVEL))
                     .Cast<Def>());
 
             DebugString.AppendLine("FactionDef Removing Stuff");
